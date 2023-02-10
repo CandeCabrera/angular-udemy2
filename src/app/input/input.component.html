@@ -1,0 +1,13 @@
+
+<label>Username</label>
+<input 
+type="text" 
+class="form-control" 
+(input)="inputEvent($event)"/>
+ <p>{{userName}}</p>
+
+<button
+  class="btn btn-primary"
+  [disabled]="!isAvailable"
+ (click)="clearInput()"
+>Clear Username</button>
